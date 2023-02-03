@@ -2,10 +2,16 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    string friends[2] = { "홍길동", "성춘향" };
+
+    cout << friends[0];
+
+    return 0;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

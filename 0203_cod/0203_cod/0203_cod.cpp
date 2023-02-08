@@ -1,8 +1,8 @@
 ﻿// 0203_cod.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <iostream>
-#include <string>
+//#include <iostream>
+//#include <string>
 //using namespace std;
 //#include <iostream>
 //int main() {
@@ -68,20 +68,20 @@
 //   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
 //   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
 
-int main() {
-
-	int grade[5] ;
-	int a;
-	int sum = 0;
-	for (int i=0 ; i<5;i++){
-		std::cout << i+1<<"번째 학생의 성적을 입력하세요 :" << std::endl;
-		std::cin >> grade[i];
-	
-		sum += grade[i];
-
-	}
-	std::cout << "성적평균 :" << sum / 5;
-	
-
-
-}
+//int main() {
+//
+//	int grade[5] ;
+//	int a;
+//	int sum = 0;
+//	for (int i=0 ; i<5;i++){
+//		std::cout << i+1<<"번째 학생의 성적을 입력하세요 :" << std::endl;
+//		std::cin >> grade[i];
+//	
+//		sum += grade[i];
+//
+//	}
+//	std::cout << "성적평균 :" << sum / 5;
+//	
+//
+//
+//}

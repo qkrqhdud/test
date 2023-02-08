@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0203_cod.cpp">
+    <ClCompile Include="namespace_0207.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="dynamic_array.cpp">
+    <ClCompile Include="file.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

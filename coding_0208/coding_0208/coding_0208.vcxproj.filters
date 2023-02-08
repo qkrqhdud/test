@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0203_cod.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dynamic_array.cpp">
+    <ClCompile Include="coding_0208.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

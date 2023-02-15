@@ -17,7 +17,6 @@ int main()
 	bool flag = true;
 	while (baskin<32)
 	{
-		
 		if (flag){
 			cout << " 개수를 입력하세요 ( 1~3 ) : ";
 			cin >> num;

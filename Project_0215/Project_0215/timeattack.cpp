@@ -18,7 +18,6 @@ int main() {
 	string next;
 	string answer=pre;
 	int cnt = 0;
-
 	cout << pre<<endl;
 
 	start = time(NULL);

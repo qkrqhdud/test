@@ -27,9 +27,12 @@ int main() {
 		cout << i+1 << "번째 숫자를 입력하세요! :";
 
 		cin >> Player_num[i];
+		if (Player_num[i] > 25 || Player_num[i] < 1) {
+			i--;
+		}
 		for (int j = 0; j < i; j++) {
-			if (Player_num[i] == Player_num[j] || Player_num[i]>25 || Player_num[i]<1) {
-				cout << "잘못되었거나 중복된 숫자입니다 다시 입력해주세요.\n";
+			if (Player_num[i] == Player_num[j]) {
+				cout << " 중복된 숫자입니다 다시 입력해주세요.\n";
 				i--;
 			}
 		}

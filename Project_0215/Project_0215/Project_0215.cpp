@@ -17,29 +17,24 @@ int main()
 	bool flag = true;
 	while (baskin<32)
 	{
+		
 		if (flag){
 			cout << " 개수를 입력하세요 ( 1~3 ) : ";
 			cin >> num;
 			cout << " 사용자의 차례입니다 \n ";
-			for (int i = 0; i < num; i++) {
-				cout << baskin << endl;
-				baskin++;
-				if (baskin == 32) break;
-				
-			}
 			flag = false;
 		}
 		else {
-			num_c = rand() % 3 + 1;
+			num = rand() % 3 + 1;
 			cout << " 컴퓨터의 차례입니다 \n ";
-			for (int i = 0; i < num_c; i++) {
-					cout << baskin << endl;
-					baskin++;
-					if (baskin == 32) break;
-					
-				}
 			flag = true;
 		}	
+		for (int i = 0; i < num; i++) {
+			cout << baskin << endl;
+			baskin++;
+			if (baskin == 32) break;
+
+		}
 	}
 	cout << "------------게임 종료------------\n";
 	flag ? cout << "사용자의 승리!!" : cout << "컴퓨터의 승리!!";

@@ -28,6 +28,7 @@ int main() {
 
 		cin >> Player_num[i];
 		if (Player_num[i] > 25 || Player_num[i] < 1) {
+			cout << " 범위를 벗어난 숫자입니다 다시 입력해주세요.\n";
 			i--;
 		}
 		for (int j = 0; j < i; j++) {

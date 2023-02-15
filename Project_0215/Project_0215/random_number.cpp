@@ -24,12 +24,12 @@ int main() {
 
 	for (int i = 0; i < 6; i++) {
 
-		cout << i << "번째 숫자를 입력하세요! :";
+		cout << i+1 << "번째 숫자를 입력하세요! :";
 
 		cin >> Player_num[i];
 		for (int j = 0; j < i; j++) {
 			if (Player_num[i] == Player_num[j] || Player_num[i]>25 || Player_num[i]<1) {
-				cout << "잘못되었거나 중복된 숫자입니다 다시 입력해주세요.";
+				cout << "잘못되었거나 중복된 숫자입니다 다시 입력해주세요.\n";
 				i--;
 			}
 		}

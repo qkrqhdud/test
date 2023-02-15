@@ -24,7 +24,7 @@
     <ClCompile Include="random_number.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
+    <ClCompile Include="mabangjin.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

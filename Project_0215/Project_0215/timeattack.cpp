@@ -25,18 +25,22 @@ int main() {
 		cin >> next;
 		cout << endl;
 		if ( pre.at(pre.size()-1) == next[0]) {
-			answer = answer + " -> " + next;
-			pre = next;
-			cout << answer;
-			cnt++;
+			finish = time(NULL);
+			if ((double)(finish - start) <= 5) {
+				answer = answer + " -> " + next;
+				pre = next;
+				cout << answer<<endl;
+				cnt++;
+			}
+			
 		}
 		else {
 			cout << "잘못된입력입니다\n";
 		}
 		finish = time(NULL);
-		cout << (double)(finish - start) << endl;
+		
 		if ((double)(finish - start) >= 5) {
-			cout << "-------------타임오버---------------\n\n" << "-------------게임종료---------------";
+			cout << "-------------타임오버---------------\n\n" << "-------------게임종료---------------\n";
 			cout << "총 입력한 단어 수:" << cnt << endl;
 			return -1;
 

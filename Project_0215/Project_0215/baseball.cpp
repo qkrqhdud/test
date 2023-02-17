@@ -7,11 +7,12 @@ int main() {
 	srand(time(NULL));
 
 
-	int Com_num[3];
-	int Player_num[3];
+	int num = 3;
+	int* Com_num = new int[num];
+	int* Player_num = new int[num];
 	int cnt = 1;
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < num; i++) {
 		Com_num[i] = rand() % 9 + 1;
 		for (int j = 0; j < i; j++) {
 			if (Com_num[i] == Com_num[j]) {
@@ -24,7 +25,7 @@ int main() {
 		int cnt_ball = 0;
 
 		cout << "1~9 까지의 숫자 3개를 입력해주세요. (이외의 숫자 : 종료) \n";
-		for (int i = 0;i < 3;i++) {
+		for (int i = 0;i < num;i++) {
 			
 			cin >> Player_num[i];
 
@@ -36,7 +37,7 @@ int main() {
 				cnt_strike += 1;
 			}
 			else {
-				for (int j = 0; j < 3;j++) {
+				for (int j = 0; j < num;j++) {
 					if (Player_num[i] == Com_num[j]) {
 						cnt_ball += 1;
 					}
@@ -44,7 +45,7 @@ int main() {
 			}
 		
 		}
-		if (cnt_strike == 3) {
+		if (cnt_strike == num) {
 			cout << cnt << "번만에 맞췄습니다!!\n";
 			return -1;
 		}

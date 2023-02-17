@@ -128,7 +128,7 @@ int win(int visit[][MAX_N]) {
                     int nx = x + dx[i];
                     int ny = y + dy[i];
 
-                    while (0 <= nx && nx < 19 && 0 <= ny && ny < 19) {
+                    while (0 <= nx && nx < MAX_N && 0 <= ny && ny < MAX_N) {
                        
                         if (visit[nx][ny] == focus) {
                             cnt++;
@@ -182,23 +182,23 @@ void DrawUserCursor(int& y)
 }
 void DrawUserCursor(int& x,int& y, int flag)
 {
-    if (x <= -9)
+    if (x <= -(MAX_N/2))
     {
-        x = -9;
+        x = -(MAX_N / 2);
     }
-    else if (x >= 9)
+    else if (x >= MAX_N/2)
     {
-        x = 9;
+        x = (MAX_N / 2);
     }
-    if (y <= -8)
+    if (y <= -(MAX_N/2-1))
     {
-        y = -8;
+        y = -(MAX_N / 2)-1;
     }
-    else if (y >= 10)
+    else if (y >= MAX_N/2+1)
     {
-        y = 10;
+        y = (MAX_N / 2)+1;
     }
-    gotoxy(9+x, 8 + y);
+    gotoxy((MAX_N / 2) +x, (MAX_N / 2)-1 + y);
 
     if (flag ==1)cout << "○";
     else cout << "●";
@@ -360,14 +360,14 @@ void omok() {
             
             if (flag == 1) {
                 system("cls");
-                gotoxy(8, 6);
+                gotoxy(((MAX_N / 2)-1), 6);
                 cout << "백돌의 승리입니다.";
                 DrawGameOver();
                 return;
             }
             else {
                 system("cls");
-                gotoxy(8, 6);
+                gotoxy(((MAX_N / 2)-1), 6);
                 cout << "흑돌의 승리입니다.";
                 DrawGameOver();
                 return;
@@ -402,8 +402,8 @@ void omok() {
         }
         else if (input == SPACE)
         {
-            if (visited[8 + y][9 + x] == 0) {
-                visited[8 + y][9 + x] = flag;
+            if (visited[((MAX_N / 2)-1) + y][(MAX_N / 2) + x] == 0) {
+                visited[((MAX_N / 2)-1) + y][(MAX_N / 2) + x] = flag;
             }
             if (flag == 1) {
                 flag = 2;

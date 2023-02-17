@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	srand(time(NULL));
 
-	//int num = rand();	// 1~25 사이의 난수
+
 	int Com_num[3];
 	int Player_num[3];
 	int cnt = 1;

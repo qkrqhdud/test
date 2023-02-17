@@ -3,8 +3,6 @@
 
 using namespace std;
 
-
-
 int main() {
 	int n=0;
 	int cnt = 1;
@@ -20,7 +18,7 @@ int main() {
 	while (cnt<n*n) {
 		idx_y += 1;
 		idx_x += 1;
-		if (idx_y >= n && idx_x >= n&& mabang.at(idx_y).at(idx_x)) {
+		if (idx_y >= n && idx_x >= n) {
 			idx_x -= 1;
 			idx_y -= 2;
 		}
@@ -30,6 +28,11 @@ int main() {
 		else if (idx_x >= n) {
 			idx_x -= n;
 		}
+
+		if (mabang.at(idx_y).at(idx_x) != 0) {
+			idx_x -= 1;
+			idx_y -= 2;
+		}
 		cnt++;
 		mabang.at(idx_y).at(idx_x) = cnt;
 	}
@@ -38,7 +41,5 @@ int main() {
 			cout << mabang.at(i).at(j) << " ";
 		}
 		cout << "\n";
-	}
-
-
+	}	
 }

@@ -129,7 +129,7 @@ void visitmap(int visit[][MAX_N]) {
 
 void block(int&x,int&y,int shape) {
 
-    gotoxy(MAX_N / 2 + x, 1+ y);
+    gotoxy(MAX_N / 2 + x, 0 + y);
 
 
     switch (shape) {

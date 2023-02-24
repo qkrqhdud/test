@@ -248,42 +248,6 @@ MENU ReadyGame()
     }
 }
 
-MENU Readyomok()
-{
-    int game = 2;// 2 omok
-    int y = 0;
-    int x = 0;
-    int input = 0;
-    while (true)
-    {
-        drawmap();
-        DrawUserCursor(x, y, game);
-        input = _getch();
-        //→←↑↓
-        if (input == MAGIC_KEY)
-        {
-            switch (_getch())
-            {
-            case UP:
-                --y;
-                break;
-            case DOWN:
-                ++y;
-                break;
-            case RIGHT:
-                ++x;
-                break;
-            case LEFT:
-                --x;
-                break;
-            }
-        }
-        else if (input == SPACE)
-        {
-            
-        }
-    }
-}
 
 
 

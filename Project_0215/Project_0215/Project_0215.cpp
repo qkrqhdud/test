@@ -20,6 +20,10 @@ int main()
 		if (flag){
 			cout << " 개수를 입력하세요 ( 1~3 ) : ";
 			cin >> num;
+			if (num > 3 || num < 1) {
+				cout << "개수를 확인하세요\n";
+				continue;
+			}
 			cout << " 사용자의 차례입니다 \n ";
 			flag = false;
 		}

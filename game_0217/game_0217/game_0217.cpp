@@ -97,7 +97,12 @@ void drawmap() {
     }
 
 }
-void visitmap(int visit[][19]) {
+
+
+
+
+
+void visitmap(int visit[][MAX_N]) {
 
     for (int i = 0; i < MAX_N; i++) {
         for (int j = 0; j < MAX_N; j++) {
@@ -112,7 +117,6 @@ void visitmap(int visit[][19]) {
       
         }
     }
-
 }
 int win(int visit[][MAX_N]) {
     int dx[] = { 0,1,1,-1 };
@@ -411,8 +415,6 @@ void omok() {
             else {
                 flag = 1;
             }
-            
-
         }
     }    
 }

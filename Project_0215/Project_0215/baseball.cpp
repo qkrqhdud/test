@@ -7,7 +7,7 @@ int main() {
 	srand(time(NULL));
 
 
-	int num = 3;
+	const int num = 3;
 	int* Com_num = new int[num];
 	int* Player_num = new int[num];
 	int cnt = 1;
